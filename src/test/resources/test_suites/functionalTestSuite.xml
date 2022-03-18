@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Functional Test Suite" parallel="methods">
+    <test name="Functional tests on each page" enabled="true">
+        <classes>
+            <class name="functionalTests.CollectorPageTest"/>
+            <class name="functionalTests.CompletionPageTest"/>
+            <class name="functionalTests.ComplicationsPageTest"/>
+            <class name="functionalTests.ExposuresPageTest"/>
+            <class name="functionalTests.PersonPageTest"/>
+            <class name="functionalTests.SamplePageTest"/>
+            <class name="functionalTests.SymptomsPageTest"/>
+        </classes>
+    </test>
+</suite>
