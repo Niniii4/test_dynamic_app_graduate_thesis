@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Negative Scenarios Test Suite">
+    <test name="Functional tests negative scenarios" enabled="true">
+        <classes>
+            <class name="functionalTests.CollectorPageTest">
+                <methods>
+                    <include name="functionalTestNegativeScenarios"/>
+                    <exclude name="functionalTestPositiveScenario"/>
+                    <exclude name="clearSignatureTest"/>
+                </methods>
+            </class>
+            <class name="functionalTests.PersonPageTest">
+                <methods>
+                    <include name="functionalTestRespondentNegativeScenarios"/>
+                    <include name="functionalTestPatientNegativeScenarios"/>
+                    <exclude name="functionalTestRespondentPositiveScenario"/>
+                    <exclude name="functionalTestPatientPositiveScenario"/>
+                </methods>
+            </class>
+            <class name="functionalTests.SamplePageTest">
+                <methods>
+                    <include name="functionalTestNegativeScenarios"/>
+                    <exclude name="functionalTestPositiveScenarios"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

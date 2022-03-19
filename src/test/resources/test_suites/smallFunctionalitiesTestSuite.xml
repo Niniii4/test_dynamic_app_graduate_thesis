@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Small Functionalities Test Suite">
+    <test name="Functional test small functionalities" enabled="true">
+        <classes>
+            <class name="functionalTests.CollectorPageTest">
+                <methods>
+                    <exclude name="functionalTestNegativeScenarios"/>
+                    <exclude name="functionalTestPositiveScenario"/>
+                    <include name="clearSignatureTest"/>
+                </methods>
+            </class>
+<!--            <class name="functionalTests.SymptomsPageTest">-->
+<!--                <methods>-->
+<!--                    <include name="functionalTestCheckNoSymptomsAndSeeDisabledDependantFields"/>-->
+<!--                    <include name="functionalTestCheckUnknownSymptomsAndSeeDisabledDependantFields"/>-->
+<!--                    <exclude name="functionalTestRatingSymptoms"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+        </classes>
+    </test>
+</suite>

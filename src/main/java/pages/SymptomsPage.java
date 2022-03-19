@@ -143,12 +143,12 @@ public class SymptomsPage extends BasePage {
     }
 
     public SymptomsPage isNoSymptomsDisabled() {
-        waitAndFindElement(By.cssSelector("input#sq_372i_0[disabled]"));
+        waitAndFindElement(By.cssSelector("input#sq_354i_0[disabled]"));
         return this;
     }
 
     public SymptomsPage isUnknownSymptomsDisabled() {
-        waitAndFindElement(By.cssSelector("input#sq_372i_1[disabled]"));
+        waitAndFindElement(By.cssSelector("input#sq_354i_1[disabled]"));
         return this;
     }
 
