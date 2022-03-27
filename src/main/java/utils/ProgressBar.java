@@ -1,6 +1,5 @@
 package utils;
 
-import com.epam.healenium.SelfHealingDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

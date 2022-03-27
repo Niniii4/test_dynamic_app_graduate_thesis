@@ -1,7 +1,9 @@
 package utils;
 
-import com.epam.healenium.SelfHealingDriver;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -14,11 +16,9 @@ import java.util.List;
 
 public abstract class BasePage {
 
-    private WebDriver driver;
-    private WebDriverWait wait;
-    private AjaxElementLocatorFactory factory;
-    private Actions actions;
-    private JavascriptExecutor javascriptExecutor;
+    private final WebDriver driver;
+    private final WebDriverWait wait;
+    private final Actions actions;
 
     @FindBy(className = "sv_next_btn")
     private WebElement nextPageButton;
@@ -28,12 +28,11 @@ public abstract class BasePage {
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        this.factory = new AjaxElementLocatorFactory(driver,
+        AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver,
                 TestConfigurationConstants.MAX_RETRY_FOR_LOCATING_ELEMENT_AJAX_FACTORY);
         PageFactory.initElements(factory, this);
         wait = new WebDriverWait(driver, TestConfigurationConstants.MAX_RETRY_FOR_LOCATING_ELEMENT);
         actions = new Actions(driver);
-        javascriptExecutor = (JavascriptExecutor) driver;
     }
 
     public WebDriver getDriver() {

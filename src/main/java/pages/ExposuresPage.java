@@ -1,12 +1,12 @@
 package pages;
 
-import com.epam.healenium.SelfHealingDriver;
-import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utils.BasePage;
+
+import java.util.List;
 
 public class ExposuresPage extends BasePage {
 
@@ -106,9 +106,9 @@ public class ExposuresPage extends BasePage {
             removePersonInContact(removePersonContact);
         } else {
             removePersonInContact(getDriver().findElement(
-                By.cssSelector(
-                    "#contact_people > div:nth-child(2) > div > div:nth-child(1) > table > tbody > tr:nth-child(" +
-                        rowId + ")")));
+                    By.cssSelector(
+                            "#contact_people > div:nth-child(2) > div > div:nth-child(1) > table > tbody > tr:nth-child(" +
+                                    rowId + ")")));
         }
         return this;
     }

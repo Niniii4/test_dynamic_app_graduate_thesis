@@ -1,14 +1,14 @@
 package pages;
 
-import static java.util.Objects.isNull;
-
-import com.epam.healenium.SelfHealingDriver;
-import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utils.BasePage;
+
+import java.util.List;
+
+import static java.util.Objects.isNull;
 
 public class SymptomsPage extends BasePage {
 

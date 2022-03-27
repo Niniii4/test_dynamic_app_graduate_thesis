@@ -34,7 +34,7 @@ public class AssertionsUtil extends BasePage {
         return waitAndCheckErrorElementsFromRoot(alertErrorElement, By.className("sv_qstn_error_top")).contains(error);
     }
 
-    public String assertTextOfSurveyCompleted(){
+    public String assertTextOfSurveyCompleted() {
         return waitAndCheckSuccessfullyCompletedSurvey(surveyCompletedSuccessfully);
     }
 

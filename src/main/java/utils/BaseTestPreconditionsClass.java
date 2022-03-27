@@ -19,13 +19,13 @@ public class BaseTestPreconditionsClass extends BaseTestClass {
 
     protected void beforeMethodsCollectorPreconditions() {
         collectorPage.insertUniqueCaseId("1")
-            .insertCollectorName("John Doe")
-            .insertCollectorInstitution("Health Care Institution")
-            .insertCollectorTelephone("0038978222046")
-            .insertCollectorEmail("john.doe@samplemail.com")
-            .insertCompletionDate(PRESENT_DATE.toString())
-            .insertSignature(xValuesCanvas, yValuesCanvas)
-            .clickNextPage();
+                .insertCollectorName("John Doe")
+                .insertCollectorInstitution("Health Care Institution")
+                .insertCollectorTelephone("0038978222046")
+                .insertCollectorEmail("john.doe@samplemail.com")
+                .insertCompletionDate(PRESENT_DATE.toString())
+                .insertSignature(xValuesCanvas, yValuesCanvas)
+                .clickNextPage();
         String passedPage = assertions.assertNewPage();
         Assert.assertTrue(passedPage.contains("Person"));
     }
@@ -33,9 +33,9 @@ public class BaseTestPreconditionsClass extends BaseTestClass {
     protected void beforeMethodsPersonPreconditions() {
         beforeMethodsCollectorPreconditions();
         personPage.selectIsPatientProvidingInformation(false)
-            .insertRespondentFirstName("Petra")
-            .insertRespondentLastName("Doev")
-            .clickNextPage();
+                .insertRespondentFirstName("Petra")
+                .insertRespondentLastName("Doev")
+                .clickNextPage();
         String passedPage = assertions.assertNewPage();
         Assert.assertTrue(passedPage.contains("Symptoms"));
     }

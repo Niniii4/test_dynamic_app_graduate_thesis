@@ -11,13 +11,13 @@
                     <include name="clearSignatureTest"/>
                 </methods>
             </class>
-<!--            <class name="functionalTests.SymptomsPageTest">-->
-<!--                <methods>-->
-<!--                    <include name="functionalTestCheckNoSymptomsAndSeeDisabledDependantFields"/>-->
-<!--                    <include name="functionalTestCheckUnknownSymptomsAndSeeDisabledDependantFields"/>-->
-<!--                    <exclude name="functionalTestRatingSymptoms"/>-->
-<!--                </methods>-->
-<!--            </class>-->
+            <class name="functionalTests.SymptomsPageTest">
+                <methods>
+                    <include name="functionalTestCheckNoSymptomsAndSeeDisabledDependantFields"/>
+                    <include name="functionalTestCheckUnknownSymptomsAndSeeDisabledDependantFields"/>
+                    <exclude name="functionalTestRatingSymptoms"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

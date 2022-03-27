@@ -1,13 +1,12 @@
 package pages;
 
-import static enums.PresentDateEnum.PRESENT_DATE;
-import static java.util.Objects.isNull;
-
-import com.epam.healenium.SelfHealingDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utils.BasePage;
+
+import static enums.PresentDateEnum.PRESENT_DATE;
+import static java.util.Objects.isNull;
 
 public class SamplePage extends BasePage {
 

@@ -13,7 +13,6 @@
         <testng.version>7.4.0</testng.version>
         <lombok.version>1.18.22</lombok.version>
         <allure-testng.version>2.17.3</allure-testng.version>
-        <allure-maven.version>2.8</allure-maven.version>
         <maven.bonigarcia.version>1.7.2</maven.bonigarcia.version>
         <jakson.annotations.version>2.9.0</jakson.annotations.version>
         <healenium.version>3.2.1</healenium.version>

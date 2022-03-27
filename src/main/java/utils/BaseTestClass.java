@@ -1,25 +1,17 @@
 package utils;
 
-import com.applitools.eyes.selenium.Eyes;
 import com.epam.healenium.SelfHealingDriver;
 import io.qameta.allure.Step;
-import java.io.IOException;
-import java.util.List;
-
-import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.asserts.SoftAssert;
-import pages.CollectorPage;
-import pages.CompletionPage;
-import pages.ComplicationsPage;
-import pages.ExposuresPage;
-import pages.PersonPage;
-import pages.SamplePage;
-import pages.SymptomsPage;
+import pages.*;
+
+import java.io.IOException;
+import java.util.List;
 
 public class BaseTestClass extends BaseTest {
 
@@ -42,7 +34,7 @@ public class BaseTestClass extends BaseTest {
     protected void beforeClass() {
         System.out.println("Before Class");
         baseUrl = PropertiesReader.readFromProperties(TestConfigurationConstants.MY_PROPERTIES_PATH,
-            TestConfigurationConstants.BASE_URL_PROPERTY);
+                TestConfigurationConstants.BASE_URL_PROPERTY);
     }
 
     @Step("Executing before test")
@@ -50,12 +42,12 @@ public class BaseTestClass extends BaseTest {
     }
 
     @Step("Initialize self healing driver")
-    protected void initializeSelfHealingDriver(){
+    protected void initializeSelfHealingDriver() {
         driver = SelfHealingDriver.create(initDriver());
     }
 
     @Step("Initialize web driver")
-    protected void initializeWebDriver(){
+    protected void initializeWebDriver() {
         driver = initDriver();
     }
 
