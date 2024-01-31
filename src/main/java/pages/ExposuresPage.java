@@ -10,10 +10,10 @@ import java.util.List;
 
 public class ExposuresPage extends BasePage {
 
-    @FindBy(id = "sq_376i_0")
+    @FindBy(id = "sq_224i_0")
     private WebElement selectContactAnswerTrue;
 
-    @FindBy(id = "sq_376i_1")
+    @FindBy(id = "sq_224i_1")
     private WebElement selectContactAnswerFalse;
 
     @FindBy(css = "#contact_people > div:nth-child(2) > div > div:nth-child(1) > table > tbody > tr")

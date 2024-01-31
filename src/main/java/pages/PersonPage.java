@@ -7,10 +7,10 @@ import utils.BasePage;
 
 public class PersonPage extends BasePage {
 
-    @FindBy(id = "sq_336i_0")
+    @FindBy(id = "sq_184i_0")
     WebElement selectPatientAnswerTrue;
 
-    @FindBy(id = "sq_336i_1")
+    @FindBy(id = "sq_184i_1")
     WebElement selectPatientAnswerFalse;
 
     @FindBy(id = "id_input_first_name_of_respondent")

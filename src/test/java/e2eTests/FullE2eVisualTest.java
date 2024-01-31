@@ -17,7 +17,7 @@ public class FullE2eVisualTest extends BaseTestE2eClass {
         initializeWebDriver();
         eyes = new Eyes();
         eyes.setApiKey("SP6rA95xDvBI06ZuwdgGJ103LerqMrhN0mpbvKxtIOMDw110");
-        eyes.open(driver, "E2E Test", "Visual test e2e");
+        eyes.open(driver, "E2E Test", "AI Visual Testing");
         collectorPage = new CollectorPage(driver);
         personPage = new PersonPage(driver);
         symptomsPage = new SymptomsPage(driver);
